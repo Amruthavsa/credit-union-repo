@@ -70,7 +70,7 @@ echo 'Project packaging stage'
 
 bat label: 'Project packaging', script: '''mvn -f credit-union-project/pom.xml package'''
 
-}
+ }
 
 }
 
