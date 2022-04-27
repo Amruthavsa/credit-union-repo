@@ -46,19 +46,18 @@ jacoco()
 
 
 
-//stage('SonarQube'){
+stage('SonarQube'){
 
-//steps{
+steps{
 
-//bat label: '', script: '''mvn -f credit-union-project/pom.xml sonar:sonar \
+bat label: '', script: '''mvn -f credit-union-project/pom.xml sonar:sonar \
 
-//-Dsonar.host.url=http://localhost:9000 \
+-Dsonar.host.url=http://localhost:9000 \
+-Dsonar.login=aa12b93a290282d50ce444c0bb63f20b52bd0015'''
 
-//-Dsonar.login=aa12b93a290282d50ce444c0bb63f20b52bd0015'''
+}
 
-//}
-
-//}
+}
 
 
 
